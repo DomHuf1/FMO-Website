@@ -4,84 +4,40 @@
     <title>Five Millennia Orchestra五十弦民风乐团</title>
   </head>
 
-  <body style="background-image:url('background.jpeg')">
-    <div class="head-container">
-      <img src="header.jpeg" style="width: 100%">
-      <div class="head-container-lower-bar" style="width: 100%">
-        <table border="0" style="width: 100%">
-          <tr style="width:100%; font-size: 16; text-align: center">
-            <td style="width:15%;"> </td>
-	    <td style="width:14%;"><input type="button" value="Home" onclick="location.href='index.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="About" onclick="location.href='about.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Members" onclick="location.href='members.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Past Events" onclick="location.href='events.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Contact Us" onclick="location.href='contact.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:15%;"> </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-
-    <div style="width:100%; height:70px;"></div>
-    <div style="height:700px; width:10%; float:left;"></div>
-    <div style="height:700px; width:43%; position: relative; float:left;">
-      <h1>Contact Information</h1>
-      <hr style="width:300px; margin-left: 0.5em;"/>
-      <h2 style="font-family:Snell Roundhand;">Five Millennia Orchestra</h2>
-      <br/>
-      <b>Email:</b> fivemill@ucsd.edu
-      <br/>
-      <b>WeChat:</b> FMO_ucsd
-      <br/>
-      <b>Facebook Page:</b>
-      <a href="https://www.facebook.com/Five-Millennia-Orchestra-1763590593936910"> @FiveMillenniaOrchestra</a>
-      <br/>
-      <b>Instagram: </b>
-      <a href="https://www.instagram.com/ucsd_five_millennia_orchestra/?hl=en"> @UCSD_FIVE_MILLENNIA_ORCHESTRA</a>
-      <br/>
-      <b>Youtube: </b>
-      <a href="https://www.youtube.com/channel/UCX9stGGOHjYgP7ll-1hL0rw"> Five Millennia Orchestra</a>
-    </div>
-    <div style="height:700px; width:43%; position: relative; float:right;">
-      <button class="button button3" onclick="doc()">我们随时欢迎你的加入！</button>
-    </div>
-    <!--<div style="width:100%;height:200px">
-      <div style="width:50%;float:left"><h1>Five Millennia Orchestra<br/>五十弦国风乐队</h1></div>
-      <div style="width:50%;float:right"><img src="logo.png" style="height:200px; width:400px"></div>
-    </div>
-    <div class="summary">
-      五十弦国风乐团是由加州大学圣地亚哥分校的学生于2017年秋季创建的音乐社团。怀着对国风的热爱，乐团致力于发扬中国音乐和文化，举办了一系列发扬中华音乐和文化的校园活动并活跃于圣地亚哥当地的文化生活。乐团尊重并重视多样化，将西洋乐器（如钢琴，小提琴，吉他）与传统民乐结合，丰富了音乐的层次感并拓宽了曲目的形式和风格。乐团涉及的音乐风格包括但不限于古典音乐的传统乐器演奏、国风流行音乐的演唱及伴奏，和原创古风音乐演唱及伴奏。五十弦国风乐团欢迎所有有一技之长的乐手，歌手，和对中国国风音乐感兴趣的朋友。
-    </div>
-    <br/><br/><br/>
-    <div><button class="button button3" onclick="members()">成员介绍</button></div>
-    <div style="width:33%;height:8px;float:left"></div>
-    <div><button class="button button3" onclick="doc()">我们随时欢迎你的加入！</button></div>
-
-    <script>
-      function doc() {
-        location.href = 'https://goo.gl/forms/Di12bwG6MlBIf0M63';
-      }
-      function members() {
-        location.href = 'memberPage.html';
-      }
-</script>-->
-    <script>
-      function doc() {
-        location.href='https://goo.gl/forms/Di12bwG6MlBIf0M63';
-      }
-    </script>
-  </body>
-
   <style>
+
     .head-container {
       position: relative
     }
+
     .head-container-lower-bar {
       position: absolute;
       text-align: center;
-      bottom: 12;
+      bottom: 19;
     }
-
+  
+    #menu {
+      list-style-type: disc;
+      padding: 0;
+      margin: auto;
+      overflow: hidden;
+      left-padding: 15%;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+      float: left;
+      width: 20%;
+      text-decoration: none;
+      color: grey;
+      font-size: 16px; 
+    }
+    
+    li:hover {
+      background-color: rgba(230, 180, 130, 0.5);
+    }
+    
     .button {
       position: center;
       padding-top: 10px;
@@ -110,61 +66,79 @@
       border: 2px solid gray;
       cursor: pointer;
     }
+
   </style>
-<!--
-  <style>
-    h1 {
-      text-shadow: 5px 5px 5px #FF0000;
-    }
+  
+  <body style="background-image:url('background.jpeg')">
+    <div class="head-container">
+      <img src="header.jpeg" style="width: 100%">
+      <div class="head-container-lower-bar" style="width: 100%">
+        <ul id="menu" style="width: 70%">
+          <li>
+            <input type="button" value="Home" 
+            onclick="location.href='index.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="About" 
+            onclick="location.href='about.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Members" 
+            onclick="location.href='members.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Past Events"
+            onclick="location.href='events.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Contact Us" 
+            onclick="location.href='contact.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>  
+        </ul>
+      </div>
+    </div>
 
-    .summary {
-      position: relative;
-      -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-      -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-      box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-      padding: 10px;
-      background: white;
-      border: yellow solid;
-    }
+    <div style="width:100%; height:70px;"></div>
+    <div style="height:700px; width:10%; float:left;"></div>
+    <div style="height:700px; width:43%; position: relative; float:left;">
+      <h1>Contact Information</h1>
+      <hr style="width:300px; margin-left: 0.5em;"/>
+      <h2 style="font-family:Snell Roundhand;">Five Millennia Orchestra</h2>
+      <br/>
+      <b>Email:</b> fivemill@ucsd.edu
+      <br/>
+      <b>WeChat:</b> FMO_ucsd
+      <br/>
+      <b>Facebook Page:</b>
+      <a href="https://www.facebook.com/Five-Millennia-Orchestra-1763590593936910"> @FiveMillenniaOrchestra</a>
+      <br/>
+      <b>Instagram: </b>
+      <a href="https://www.instagram.com/ucsd_five_millennia_orchestra/?hl=en"> @UCSD_FIVE_MILLENNIA_ORCHESTRA</a>
+      <br/>
+      <b>Youtube: </b>
+      <a href="https://www.youtube.com/channel/UCX9stGGOHjYgP7ll-1hL0rw"> Five Millennia Orchestra</a>
+    </div>
+    <div style="height:700px; width:43%; position: relative; float:right;">
+      <button class="button button3" onclick="doc()">我们随时欢迎你的加入！</button>
+    </div>
+    
 
-    .summary::after {
-      content: '';
-      position: absolute;
-      z-index: -1; /* hide shadow behind image */
-      -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-      width: 70%;
-      left: 15%; /* one half of the remaining 30% */
-      height: 100px;
-      bottom: 0;
-    }
+    <script>
+      function doc() {
+        location.href='https://goo.gl/forms/Di12bwG6MlBIf0M63';
+      }
+    </script>
 
-    .button {
-      border: none;
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-      cursor: pointer;
-    }
+  </body>
 
-    .button3 {
-      background-color: white;
-      color: black;
-      border: 2px solid #f44336;
-    }
-
-    .button3:hover {
-      background-color: #f44336;
-      color: white;
-      border: 2px solid gray;
-      cursor: pointer;
-    }
-</style>-->
 </html>
