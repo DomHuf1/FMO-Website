@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Five Millennia Orchestra五十弦民风乐团</title>
+  </head>
+
+
+  <body style="background-image:url('background.jpeg')">
+    <div class="head-container">
+      <img src="header.jpeg" style="width: 100%">
+      <div class="head-container-lower-bar" style="width: 100%">
+        <table border="0" style="width: 100%">
+          <tr style="width:100%; font-size: 16; text-align: center">
+            <td style="width:15%;"> </td>
+	    <td style="width:14%;"><input type="button" value="Home" onclick="location.href='index.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
+            <td style="width:14%;"><input type="button" value="About" onclick="location.href='about.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
+            <td style="width:14%;"><input type="button" value="Members" onclick="location.href='members.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
+            <td style="width:14%;"><input type="button" value="Past Events" onclick="location.href='events.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
+            <td style="width:14%;"><input type="button" value="Contact Us" onclick="location.href='contact.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
+            <td style="width:15%;"> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- 网站负责人 -->
+    <p style="padding-left:20px"><b>Design: Jiayi (Ellie) Li <br/>
+    Implement: Xueyang (Jamie) Song, Xincheng (Carl) Shen, Jiawei (Gary) Tang</b></p>
+
+    <!-- 18 - 19 -->
+    <div style="width:100%; height:450px">
+      <div style="width:50%; height:400px; float:left">
+        <img src="./img/member18-19/group.jpg" style="width:100%">
+      </div>
+      <div style="width:50%; height:400px; float:right">
+        <button onclick="eboard18()" class="button">Eboard成员</button>
+        <br/>
+        <button onclick="member18()" class="button">所有成员</button>
+      </div>
+    </div>
+
+    <!-- 17 - 18 -->
+    <div style="width:100%; height:450px">
+      <div style="width:50%; height:400px; float:left">
+        <img src="./img/member17-18/group.jpeg" style="width:100%">
+      </div>
+      <div style="width:50%; height:400px; float:right">
+        <button onclick="eboard17()" class="button">Eboard成员</button>
+        <br/>
+        <button onclick="member17()" class="button">所有成员</button>
+      </div>
+    </div>
+
+
+
+    <script LANGUAGE="javascript">
+      function eboard18() {
+        window.location.href = "eboard/eboard18-19.html";
+      }
+
+      //function member18();
+
+      function eboard17() {
+        window.location.href = "eboard/eboard17-18.html";
+      }
+
+      //function member17();
+    </script>
+
+  </body>
+
+  <style>
+    .head-container {
+      position: relative
+    }
+
+    .head-container-lower-bar {
+      position: absolute;
+      text-align: center;
+      bottom: 12;
+    }
+
+    .button {
+      background-color: #008CBA; /* blue */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+  </style>
+
+
+</html>

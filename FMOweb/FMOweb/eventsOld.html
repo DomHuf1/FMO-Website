@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Five Millennia Orchestra五十弦民风乐团</title>
+  </head>
+
+  <body style="background-image:url('background.jpeg')">
+    <div class="head-container">
+      <img src="header.jpeg" style="width: 100%">
+      <div class="head-container-lower-bar" style="width: 100%">
+        <table border="0" style="width: 100%">
+          <tr style="width:100%; font-size: 16; text-align: center">
+            <td style="width:15%;"> </td>
+	          <td style="width:14%;"><input type="button" class="tab-btn" value="Home" onclick="location.href='index.html'"></td>
+            <td style="width:14%;"><input type="button" class="tab-btn" value="About" onclick="location.href='about.html'"></td>
+            <td style="width:14%;"><input type="button" class="tab-btn" value="Members" onclick="location.href='members.html'"></td>
+            <td style="width:14%;"><input type="button" class="tab-btn" value="Past Events" onclick="location.href='events.html'"></td>
+            <td style="width:14%;"><input type="button" class="tab-btn" value="Contact Us" onclick="location.href='contact.html'"></td>
+            <td style="width:15%;"> </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- add new events here -->
+    <div class="event-row">
+      <div class="event">
+        <img src="sample1.jpg" width="400" height="400">
+        <div class="description-background"></div>
+        <a href="#" class="description-text">2018 Winter Quarter Highlights</a>
+      </div>
+      <div class="event">
+        <img src="sample2.jpg" width="400" height="400">
+        <div class="description-background"></div>
+        <a href="#" class="description-text">2019 Winter Quarter Highlights</a>
+      </div>
+      <div class="event">
+        <img src="sample3.jpg" width="400" height="400">
+        <div class="description-background"></div>
+        <a href="#" class="description-text">Other Highlights</a>
+      </div>
+      <div class="event">
+        <img src="sample4.jpg" width="400" height="400">
+        <div class="description-background"></div>
+        <a href="#" class="description-text">More Highlights</a>
+      </div>
+    </div>
+
+  </body>
+
+  <style>
+    .tab-btn {
+      width: 120px;
+      height: 40px;
+      font-size: 20px;
+      border: 0px;
+      background-color: transparent
+    }
+    .head-container {
+      position: relative
+    }
+    .head-container-lower-bar {
+      position: absolute;
+      text-align: center;
+      bottom: 12;
+    }
+    .event-row {
+      margin: auto;
+      text-align: center;
+      width: 80%;
+    }
+    .event {
+      display: inline-block;
+      position: relative;
+      margin: 40px;
+      text-align: left;
+    }
+    .description-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24;
+      text-decoration:none;
+      position: absolute;
+      bottom: 32px;
+      left: 16px;
+      color: white;
+    }
+    .description-background {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 50%;
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,1));
+    }
+  </style>
+
+</html>

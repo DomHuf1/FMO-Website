@@ -3,22 +3,79 @@
     <meta charset="utf-8">
     <title>Five Millennia Orchestra五十弦民风乐团</title>
   </head>
+
+  <style>
   
+    .head-container {
+      position: relative
+    }
+
+    .head-container-lower-bar {
+      position: absolute;
+      text-align: center;
+      bottom: 19;
+    }
+
+    #menu {
+      list-style-type: disc;
+      padding: 0;
+      margin: auto;
+      overflow: hidden;
+      left-padding: 15%;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+      float: left;
+      width: 20%;
+      text-decoration: none;
+      color: grey;
+      font-size: 16px; 
+    }
+    
+    li:hover {
+      background-color: rgba(230, 180, 130, 0.5);
+    }
+
+  </style>
+
   <body style="background-image:url('background.jpeg')">
     <div class="head-container">
       <img src="header.jpeg" style="width: 100%">
       <div class="head-container-lower-bar" style="width: 100%">
-        <table border="0" style="width: 100%">
-          <tr style="width:100%; font-size: 16; text-align: center">
-            <td style="width:15%;"> </td>
-	    <td style="width:14%;"><input type="button" value="Home" onclick="location.href='index.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="About" onclick="location.href='about.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Members" onclick="location.href='members.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Past Events" onclick="location.href='events.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Contact Us" onclick="location.href='contact.html'" style="width:120px;height:40px;font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:15%;"> </td>
-          </tr>
-        </table>
+        <ul id="menu" style="width: 70%">
+          <li>
+            <input type="button" value="Home" 
+            onclick="location.href='index.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="About" 
+            onclick="location.href='about.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Members" 
+            onclick="location.href='members.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Past Events"
+            onclick="location.href='events.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>
+          <li>
+            <input type="button" value="Contact Us" 
+            onclick="location.href='contact.html'" style="width:120px;
+            height:40px;font-size:20px;border:0px;
+            background-color:transparent">
+          </li>  
+        </ul>
       </div>
     </div>
 
@@ -65,14 +122,4 @@
 
   </body>
 
-  <style>
-    .head-container {
-      position: relative
-    }
-    .head-container-lower-bar {
-      position: absolute;
-      text-align: center;
-      bottom: 12;
-    }
-  </style>
 </html>
