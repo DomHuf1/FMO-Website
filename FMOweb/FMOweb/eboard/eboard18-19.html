@@ -12,7 +12,28 @@
       .head-container-lower-bar {
         position: absolute;
         text-align: center;
-        bottom: 12;
+        bottom: 3%;
+      }
+
+      #menu {
+        list-style-type: none;
+        padding: 0;
+        margin: auto;
+        overflow: hidden;
+        left-padding: 15%;
+      }
+    
+      li a {
+        display: block;
+        text-align: center;
+        float: left;
+        width: 20%;
+        text-decoration: none;
+        color: black;
+      }
+    
+      li a:hover {
+        color: rgb(230, 180, 130);
       }
 
       .content {
@@ -40,45 +61,46 @@
         text-align: center;
         min-height: 10%;
       }
-
-      
       
     </style>
 
   </head>
 
   <!-- The header -->
-  <body style="background-image:url('../background.jpeg');">
-    <header class="head-container">
+  <body style="background-image:url('../background.jpeg')">
+    <div class="head-container">
       <img src="../header.jpeg" style="width: 100%">
       <div class="head-container-lower-bar" style="width: 100%">
-        <table border="0" style="width: 100%">
-          <tr style="width:100%; font-size: 16; text-align: center">
-            <td style="width:15%;"> </td>
-      <td style="width:14%;"><input type="button" value="Home" 
-        onclick="location.href='../index.html'" style="width:120px;height:40px;
-        font-size:20px;border:0px;background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="About" 
-              onclick="location.href='../about.html'" style="width:120px;
-              height:40px;font-size:20px;border:0px;
-              background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Members" 
-              onclick="location.href='../members.html'" style="width:120px;
-              height:40px;font-size:20px;border:0px;
-              background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Past Events" 
-              onclick="location.href='../events.html'" style="width:120px;
-              height:40px;font-size:20px;border:0px;
-              background-color:transparent"></td>
-            <td style="width:14%;"><input type="button" value="Contact Us"
-              onclick="location.href='../contact.html'" style="width:120px;
-              height:40px;font-size:20px;border:0px;
-              background-color:transparent"></td>
-            <td style="width:15%;"> </td>
-          </tr>
-        </table>
+        <ul id="menu" style="width: 70%">
+          <li>
+            <a href="../index.html" style="width:20%;
+            height:40px;font-size:22px;border:0px;
+            background-color:transparent">Home</a>
+          </li>
+          <li>
+            <a href="../about.html" style="width:20%;
+            height:40px;font-size:22px;border:0px;
+            background-color:transparent">About</a>
+          </li>
+          <li>
+            <a href="../members.html" style="width:20%;
+            height:40px;font-size:22px;border:0px;
+            background-color:transparent">Members</a>
+          </li>
+          <li>
+            <a href="../events.html" style="width:20%;
+            height:40px;font-size:22px;border:0px;
+            background-color:transparent">Past Events</a>
+          </li>
+          <li>
+            <a href="../contact.html" style="width:20%;
+            height:40px;font-size:22px;border:0px;
+            background-color:transparent">Contact Us</a>
+          </li>  
+        </ul>
       </div>
-    </header>
+    </div>
+
 
     <!-- The content section for EB members' personal info -->    
     <div class="content">
