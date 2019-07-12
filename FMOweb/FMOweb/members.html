@@ -6,6 +6,11 @@
 
   <style>
 
+    #header {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
     .head-container {
       position: relative;
     }
@@ -23,7 +28,7 @@
       overflow: hidden;
       left-padding: 15%;
     }
-  
+
     li a {
       display: block;
       text-align: center;
@@ -32,29 +37,139 @@
       text-decoration: none;
       color: black;
     }
-    
+
     li a:hover {
       color: rgb(230, 180, 130);
     }
 
-    .button {
-      background-color: #008CBA; /* blue */
-      border: none;
+    .big-spacing {
+      height: 40px;
+    }
+    .small-spacing {
+      height: 25px;
+    }
+
+    h1.member-sub-header {
+      border-left: 10px solid;
+      border-color: rgb(172, 81, 24);
+      margin-left: 6.2%;
+      padding-left: 15px;
+      padding-bottom: 0;
+      display: inline;
+    }
+
+    .group-img-container {
+      min-height: 400px;
+    }
+
+    .img-1819-container {
+      margin-left: 6.2%;
+      width: 42%;
+      float: left;
+      position: relative;
+    }
+
+    .img-1718-container {
+      margin-right: 6.2%;
+      width: 42%;
+      float: right;
+      position: relative;
+    }
+
+    .img-1819 {
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .img-1718 {
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .eb {
+      background-color: rgb(172, 81, 24);
       color: white;
-      padding: 20px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
+      font-size: 18px;
+      padding: 16px 32px;
+    } 
+    
+    .all {
+      background-color: rgb(172, 81, 24);
+      color: white;
+      font-size: 18px;
+      padding: 16px 32px;
+    } 
+
+    .middle-upper-text {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+    }
+    
+    .middle-lower-text {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      width: 30%;
+    }
+    
+    .img-1819-container:hover .img-1819 {
+      opacity: 0.5;
+    }
+  
+    .img-1819-container:hover .middle-upper-text {
+      opacity: 1;
+    }
+
+    .img-1819-container:hover .middle-lower-text {
+      opacity: 1;
+    }
+    
+    .img-1718-container:hover .img-1718 {
+      opacity: 0.5;
+    }
+  
+    .img-1718-container:hover .middle-upper-text {
+      opacity: 1;
+    }
+
+    .img-1718-container:hover .middle-lower-text {
+      opacity: 1;
+    }
+
+    .ref {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .header-block {
+      position: absolute;
+      top: 4%;
+      left: 0%;
+      padding: 10px 35px;
+      background-color: rgba(0, 0, 0, .5);
+      color: white;
+      font-size: 100%;
+    }
+    
+    #web-developer {
+      margin-left: 6%;
     }
 
   </style>
 
   <body style="background-image:url('background.jpeg')">
     <div class="head-container">
-      <img src="header.jpeg" style="width: 100%">
+      <div>
+        <img id="header" src="header.jpeg" style="width: 90%">
+      </div>
       <div class="head-container-lower-bar" style="width: 100%">
         <ul id="menu" style="width: 70%">
           <li>
@@ -86,50 +201,65 @@
       </div>
     </div>
 
+    <!-- Sub header for Members Page-->
+    <div class="big-spacing"></div>
+    <div> 
+      <h1 class="member-sub-header">Members 成员介绍</h1>
+    </div>
+    <div class="small-spacing"></div>
+
+    <!-- Group Image -->
+    <div class="group-img-container">
+      <!-- 18 - 19 -->
+      <div class="img-1819-container">
+        <img class="img-1819" src="./img/member18-19/groupNew.jpg" 
+         style="width:100%">
+        <div class="header-block">
+          <div>2018 - 2019</div>
+        </div>
+        <div class="middle-upper-text">
+          <div class="eb">
+            <a class="ref" href="eboard/eboard18-19.html">Eboard Members</a>
+          </div>
+        </div>
+        <div class="middle-lower-text">
+          <div class="all">
+            <a class="ref" href="...">All Members</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17 - 18 -->
+      <div class="img-1718-container">
+        <img class="img-1718" src="./img/member17-18/groupNew.jpeg" 
+         style="width:100%">
+        <div class="header-block">
+          <div>2017 - 2018</div>
+        </div>
+        <div class="middle-upper-text">
+          <div class="eb">
+            <a class="ref" href="eboard/eboard17-18.html">Eboard Members</a>
+          </div>
+        </div>
+        <div class="middle-lower-text">
+          <div class="all">
+            <a class="ref" href="xxx">All Members</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="big-spacing"></div>
 
     <!-- 网站负责人 -->
-    <p style="padding-left:20px"><b>Design: Jiayi (Ellie) Li <br/>
-    Implement: Xueyang (Jamie) Song, Xincheng (Carl) Shen, Jiawei (Gary) Tang</b></p>
+    <div id="web-developer">
+      <i>Design: Jiayi (Ellie) Li, Feiyi (Dominic) Hu<br/>
+         Implement: Xueyang (Jamie) Song, Xincheng (Carl) Shen, 
+         Jiawei (Gary) Tang, Feiyi (Dominic) Hu
+      </i>
+    </div> 
 
-    <!-- 18 - 19 -->
-    <div style="width:100%; height:450px">
-      <div style="width:50%; height:400px; float:left">
-        <img src="./img/member18-19/group.jpg" style="width:100%">
-      </div>
-      <div style="width:50%; height:400px; float:right">
-        <button onclick="eboard18()" class="button">Eboard成员</button>
-        <br/>
-        <button onclick="member18()" class="button">所有成员</button>
-      </div>
-    </div>
-
-    <!-- 17 - 18 -->
-    <div style="width:100%; height:450px">
-      <div style="width:50%; height:400px; float:left">
-        <img src="./img/member17-18/group.jpeg" style="width:100%">
-      </div>
-      <div style="width:50%; height:400px; float:right">
-        <button onclick="eboard17()" class="button">Eboard成员</button>
-        <br/>
-        <button onclick="member17()" class="button">所有成员</button>
-      </div>
-    </div>
-
-
-
-    <script LANGUAGE="javascript">
-      function eboard18() {
-        window.location.href = "eboard/eboard18-19.html";
-      }
-
-      //function member18();
-
-      function eboard17() {
-        window.location.href = "eboard/eboard17-18.html";
-      }
-
-      //function member17();
-    </script>
 
   </body>
 
