@@ -55,27 +55,29 @@
 
       .text {
         color: white;
-        margin-right: 1em;
       }
 
       .content {
         margin: auto;
         padding: 20px;
-        overflow: hidden; 
-        border-collapse: collapse;
       }
 
       #group-img {
-        width: 60%;
-        margin-left: 4%;
+        width: 64%;
+        float: left;
+        margin-left: 2%;
       }
     
       #text-container {
-        width: 30%;
-        margin-right: 4%;
+        width: 33%;
+        margin: auto;
+        float: left;
         background-color: rgba(0, 0, 0, .6);
       }
 
+      div {
+        display: block;
+      }
 
     </style>
   
@@ -122,37 +124,26 @@
       <h1 class="member-sub-header">Home 主页</h1>
     </div>
     <div class="small-spacing"></div>
-    
-    <!-- Home Page Content section -->
-    <table class="content" width=95%;>
-      <td id="group-img">
-        <img src="GC.JPG" width="100%">
-      </td>  
-      <td id="text-container">
-        <h1 class="text" style="margin-left: 0.4em">五十弦</h1>
-        <h1 class="text" style="margin-left: 0.4em">Five Millennia Orchestra</h1>
-        <hr class="text" style="width:300px; margin-left: 1em;"/>
-        <p class="text" style="margin-left: 1em;" ><br>
+
+    <!-- Content section -->
+    <div class="content">
+      <div class="content-container">
+        <div id="group-img">
+          <img src="GC.JPG" width="100%">
+        </div>
+        <div id="text-container">
+          <h1 class="text" style="margin-left: 0.4em">Five Millennia Orchestra 五十弦</h1>
+          <hr class="text" style="width:300px; margin-left: 1em;"/>
+          <p class="text" style="margin-left: 1em;"><br/><br/>
           Five Millennia Orchestra is a student-founded non-profit organization.
           FMO focuses on Chinese traditional culture and its inheritance.
           We are looking for talents, for connection, and for soul mates.
           Hope more people are willing to understand and relish more about the 
           Chinese culture.
-        </p>
-        <p class="text" style="margin-left: 1em">
-          五十弦国风乐团是由加州大学圣地亚哥分校的学生于2017年秋季创建的音乐社团。
-          怀着对国风的热爱，乐团致力于发扬中国音乐和文化，
-          举办了一系列发扬中华音乐和文化的校园活动并活跃于圣地亚哥当地的文化生活。
-          乐团尊重并重视多样化，将西洋乐器（如钢琴，小提琴，吉他）与传统民乐结合，
-          丰富了音乐的层次感并拓宽了曲目的形式和风格。
-          乐团涉及的音乐风格包括但不限于古典音乐的传统乐器演奏、
-          国风流行音乐的演唱及伴奏，和原创古风音乐演唱及伴奏。
-          五十弦国风乐团欢迎所有有一技之长的乐手，歌手，
-          和对中国国风音乐感兴趣的朋友。
-        </p>
-      </td>
-    </table>  
-
+          </p>
+        </div>
+      </div>
+    </div>
 
 
   </body>
