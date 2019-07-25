@@ -75,7 +75,63 @@
         margin-right: 4%;
         background-color: rgba(0, 0, 0, .6);
       }
+      
+      a {
+        text-decoration: none;
+      }
 
+      .footer-container {
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }   
+
+      .footer-sub {
+        margin-left: 10%;
+        font-size: 40px;
+      }
+      
+      .table-container {
+        margin: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+      }
+
+      .footer-table {
+        margin: auto;
+        width: 80%;
+        border: none;
+        border-collapse: collapse;
+      }
+
+      .join-button {
+        position: center;
+        padding-top: 10px;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .join-button {
+        background-color: white;
+        color: black;
+        border: 2px solid #f44336;
+      }
+
+      .join-button:hover {
+        background-color: #f44336;
+        color: white;
+        border: 2px solid gray;
+        cursor: pointer;
+      }
 
     </style>
   
@@ -108,7 +164,7 @@
             background-color:transparent">Past Events</a>
           </li>
           <li>
-            <a href="contact.html" style="width:20%;
+            <a href="#contact" style="width:20%;
             height:40px;font-size:22px;border:0px;
             background-color:transparent">Contact Us</a>
           </li>  
@@ -153,7 +209,60 @@
       </td>
     </table>  
 
-
+    <!-- The footer -->
+    <div class="footer-container" id="contact">
+      <div class="footer-sub">Contact Us</div>
+      <div class="table-container">
+      <table class="footer-table">
+        <tr>
+          <td width="12%" class="table-left">
+            <b>Email: </b>fivemill@ucsd.edu<br>
+            <b>WeChat: </b>FMO_ucsd
+          </td>
+          <td width="2%">
+            <abbr title="WeChat: FMO_ucsd">
+              <img src="img/icons/wechat.png" width="60%">
+            </abbr>
+          </td>
+          <td width="2%">
+            <abbr title="Email: fivemill@ucsd.edu">
+              <img src="img/icons/email.png" width="60%">
+            </abbr>
+          </td>
+          <td width="2%">
+            <a href="https://www.youtube.com/channel/UCX9stGGOHjYgP7ll-1hL0rw">
+              <img src="img/icons/youtube.png" width="60%">
+            </a>
+          </td>
+          <td width="2%">
+            <a href="https://www.facebook.com/
+                     Five-Millennia-Orchestra-1763590593936910">
+              <img src="img/icons/facebook.png" width="60%">
+            </a>
+          </td>
+          <td width="2%">
+            <a href="https://www.instagram.com/ucsd_five_millennia_orchestra/
+                     ?hl=en">
+              <img src="img/icons/instagram.png" width="60%">
+            </a>
+          </td>
+          <td width="6%"></td>
+          <td width="7%">
+            <div class="join-us">
+              <button class="join-button" onclick="doc()">
+                我们随时欢迎你的加入
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+    
+    <script>
+      function doc() {
+        location.href='https://goo.gl/forms/Di12bwG6MlBIf0M63';
+      }
+    </script>
 
   </body>
 
